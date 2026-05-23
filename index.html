@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>GeminiClean — Remove Gemini Logo from Videos Free</title>
+  <meta name="description" content="Free online tool to remove the Gemini AI sparkle logo (✦) from videos instantly. No signup. Runs 100% in your browser. Download clean video in seconds.">
+  <meta name="keywords" content="remove gemini logo, gemini watermark remover, gemini video watermark, veo logo remove, gemini sparkle logo remover, remove gemini star from video, gemini logo video free">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="GeminiClean">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GeminiClean — Remove Gemini Logo from Videos Free">
+  <meta property="og:description" content="Remove the Gemini AI sparkle logo from your videos instantly. Free, private, no signup needed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://geminiclean.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080b0f;
+      --surface: #0e1318;
+      --surface2: #161c23;
+      --border: #1e2830;
+      --accent: #00d9b8;
+      --accent-glow: rgba(0,217,184,0.15);
+      --accent-mid: rgba(0,217,184,0.35);
+      --text: #edf2f7;
+      --text-dim: #8899aa;
+      --text-muted: #4a5568;
+      --success: #00cc88;
+      --danger: #ff4d4d;
+      --font: 'Syne', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ──────────── TOP AD BANNER ──────────── */
+    .ad-strip {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px;
+      position: relative;
+    }
+    .ad-strip-label {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      position: absolute;
+      top: 4px;
+      right: 10px;
+    }
+    .ad-block {
+      background: var(--surface2);
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.05em;
+    }
+    .ad-leaderboard { width: 728px; height: 90px; max-width: 100%; }
+    .ad-rectangle  { width: 100%;  height: 250px; }
+    .ad-rectangle2 { width: 100%;  height: 250px; }
+
+    /* ──────────── NAV ──────────── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+    .logo em { font-style: normal; color: var(--accent); }
+    .nav-pill {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 5px 14px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ──────────── LAYOUT ──────────── */
+    .page {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      min-height: calc(100vh - 198px);
+    }
+    .main { padding: 56px 48px; border-right: 1px solid var(--border); }
+    .aside { padding: 32px 20px; display: flex; flex-direction: column; gap: 20px; background: var(--surface); }
+
+    /* ──────────── HERO ──────────── */
+    .hero { margin-bottom: 44px; }
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: '';
+      width: 20px; height: 1px;
+      background: var(--accent);
+      display: block;
+    }
+    h1 {
+      font-size: clamp(30px, 4vw, 50px);
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    h1 em { font-style: normal; color: var(--accent); }
+    .hero-sub {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      color: var(--text-dim);
+      line-height: 1.75;
+      max-width: 500px;
+    }
+
+    /* ──────────── TOOL CARD ──────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .card-bar {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-r { background: #ff5f57; }
+    .dot-y { background: #febc2e; }
+    .dot-g { background: #28c840; }
+
+    /* ──────────── DROP ZONE ──────────── */
+    .dropzone {
+      margin: 24px;
+      border: 2px dashed var(--border);
+      border-radius: 10px;
+      padding: 52px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      text-align: center;
+    }
+    .dropzone:hover, .dropzone.over {
+      border-color: var(--accent-mid);
+      background: var(--accent-glow);
+    }
+    .drop-icon {
+      width: 68px; height: 68px;
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+      transition: all 0.22s;
+    }
+    .dropzone:hover .drop-icon, .dropzone.over .drop-icon {
+      border-color: var(--accent);
+      background: var(--accent-glow);
+    }
+    .drop-title { font-size: 18px; font-weight: 700; letter-spacing: -0.025em; }
+    .drop-sub { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+    .pick-btn {
+      background: var(--accent);
+      color: #000;
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+      padding: 11px 26px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: all 0.2s;
+    }
+    .pick-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,217,184,0.3); }
+    #file-input { display: none; }
+
+    /* ──────────── ERROR ──────────── */
+    .err {
+      margin: 0 20px 16px;
+      background: rgba(255,77,77,0.1);
+      border: 1px solid rgba(255,77,77,0.3);
+      border-radius: 8px;
+      padding: 11px 16px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: #ff6b6b;
+      display: none;
+    }
+    .err.on { display: block; }
+
+    /* ──────────── PREVIEW ──────────── */
+    .preview { padding: 20px; display: none; }
+    .preview.on { display: block; }
+    video.thumb { width: 100%; border-radius: 8px; max-height: 300px; background: #000; display: block; }
+    .meta-row {
+      display: flex; gap: 20px; flex-wrap: wrap;
+      margin-top: 12px;
+      font-family: var(--mono); font-size: 11px; color: var(--text-dim);
+    }
+    .meta-row span em { font-style: normal; color: var(--accent); margin-left: 4px; }
+    .go-btn {
+      width: 100%; margin-top: 16px;
+      background: var(--accent); color: #000;
+      border: none; border-radius: 8px;
+      padding: 15px; font-family: var(--font); font-weight: 800; font-size: 15px;
+      cursor: pointer; letter-spacing: -0.01em; transition: all 0.2s;
+    }
+    .go-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,217,184,0.35); }
+    .go-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    /* ──────────── PROGRESS ──────────── */
+    .prog { padding: 20px; display: none; }
+    .prog.on { display: block; }
+    .prog-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-family: var(--mono); font-size: 11px;
+      color: var(--accent);
+      background: rgba(0,217,184,0.1);
+      border-radius: 100px; padding: 5px 12px;
+      margin-bottom: 14px;
+    }
+    .ping {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent);
+      animation: blink 1.4s infinite;
+    }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
+    .prog-labels { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; color: var(--text-dim); margin-bottom: 8px; }
+    .bar-bg { height: 4px; background: var(--border); border-radius: 4px; overflow: hidden; }
+    .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; width: 0%; transition: width 0.3s ease; }
+    .log {
+      margin-top: 12px; height: 80px; overflow-y: auto;
+      background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+      padding: 10px 12px;
+      font-family: var(--mono); font-size: 10.5px; color: var(--text-muted); line-height: 1.6;
+    }
+    .log::-webkit-scrollbar { width: 3px; }
+    .log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* ──────────── RESULT ──────────── */
+    .result { padding: 20px; display: none; }
+    .result.on { display: block; }
+    .result-card {
+      background: rgba(0,204,136,0.08);
+      border: 1px solid rgba(0,204,136,0.25);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .result-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      background: rgba(0,204,136,0.15);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .result-card h3 { font-size: 16px; font-weight: 700; color: var(--success); margin-bottom: 3px; }
+    .result-card p { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+    .dl-btn {
+      display: block; width: 100%; margin-top: 14px;
+      background: var(--success); color: #000;
+      border: none; border-radius: 8px;
+      padding: 14px; font-family: var(--font); font-weight: 800; font-size: 14px;
+      cursor: pointer; text-align: center; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .dl-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,204,136,0.35); }
+    .again-btn {
+      display: block; width: 100%; margin-top: 8px;
+      background: transparent; color: var(--text-dim);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 11px; font-family: var(--font); font-weight: 600; font-size: 13px;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .again-btn:hover { border-color: var(--text-dim); color: var(--text); }
+
+    /* ──────────── HOW IT WORKS ──────────── */
+    .how { margin-top: 52px; }
+    .section-tag {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--text-muted); margin-bottom: 22px;
+    }
+    .steps {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+    }
+    .step { background: var(--surface); padding: 24px; }
+    .step-n { font-family: var(--mono); font-size: 10px; color: var(--accent); margin-bottom: 10px; }
+    .step h3 { font-size: 15px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .step p { font-family: var(--mono); font-size: 11px; color: var(--text-dim); line-height: 1.65; }
+
+    /* ──────────── FAQ (SEO text) ──────────── */
+    .faq { margin-top: 52px; }
+    .faq-item { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .faq-a { font-family: var(--mono); font-size: 12px; color: var(--text-dim); line-height: 1.75; }
+
+    /* ──────────── ASIDE ──────────── */
+    .aside-info {
+      background: var(--surface2);
+      border: 1px solid var(--border); border-radius: 10px; padding: 20px;
+    }
+    .aside-info h3 { font-size: 14px; font-weight: 700; margin-bottom: 14px; }
+    .check-item {
+      display: flex; align-items: flex-start; gap: 9px;
+      font-family: var(--mono); font-size: 11px; color: var(--text-dim);
+      line-height: 1.55; margin-bottom: 11px;
+    }
+    .check-item::before { content: '✓'; color: var(--accent); flex-shrink: 0; }
+
+    /* ──────────── LOADING OVERLAY ──────────── */
+    .overlay {
+      position: fixed; inset: 0;
+      background: rgba(8,11,15,0.85); backdrop-filter: blur(6px);
+      z-index: 200; display: none;
+      align-items: center; justify-content: center;
+    }
+    .overlay.on { display: flex; }
+    .overlay-card {
+      background: var(--surface);
+      border: 1px solid var(--border); border-radius: 16px;
+      padding: 40px 36px; text-align: center; max-width: 300px;
+    }
+    .spin {
+      width: 38px; height: 38px;
+      border: 3px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; margin: 0 auto 18px;
+      animation: rotate 0.75s linear infinite;
+    }
+    @keyframes rotate { to { transform: rotate(360deg); } }
+    .overlay-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .overlay-card p { font-family: var(--mono); font-size: 11px; color: var(--text-dim); line-height: 1.65; }
+
+    /* ──────────── FOOTER ──────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 44px 48px 0;
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 36px;
+    }
+    .fc h4 { font-size: 11px; font-weight: 700; color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+    .fc p { font-family: var(--mono); font-size: 11px; color: var(--text-muted); line-height: 1.8; }
+    .footer-bottom {
+      margin-top: 32px; border-top: 1px solid var(--border);
+      padding: 16px 48px;
+      display: flex; justify-content: space-between;
+      font-family: var(--mono); font-size: 10px; color: var(--text-muted);
+    }
+
+    /* ──────────── RESPONSIVE ──────────── */
+    @media (max-width: 900px) {
+      .page { grid-template-columns: 1fr; }
+      .aside { display: none; }
+      nav { padding: 16px 20px; }
+      .main { padding: 32px 20px; }
+      .steps { grid-template-columns: 1fr; }
+      footer { grid-template-columns: 1fr; padding: 32px 20px 0; }
+      .footer-bottom { padding: 16px 20px; flex-direction: column; gap: 4px; }
+      .ad-leaderboard { width: 100%; height: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════ LOADING OVERLAY ════ -->
+<div class="overlay" id="overlay">
+  <div class="overlay-card">
+    <div class="spin"></div>
+    <h3>Loading Video Engine</h3>
+    <p>Initializing ffmpeg.wasm…<br>First load takes ~5 seconds.<br>Subsequent visits are instant.</p>
+  </div>
+</div>
+
+<!-- ════ TOP AD — Replace with AdSense ════ -->
+<div class="ad-strip">
+  <span class="ad-strip-label">Advertisement</span>
+  <!-- PASTE YOUR ADSENSE LEADERBOARD 728×90 CODE HERE -->
+  <div class="ad-block ad-leaderboard">AdSense · Leaderboard 728×90</div>
+</div>
+
+<!-- ════ NAV ════ -->
+<nav>
+  <div class="logo">Gemini<em>Clean</em></div>
+  <div class="nav-pill">Free · No Signup · Runs in Browser</div>
+</nav>
+
+<!-- ════ PAGE GRID ════ -->
+<div class="page">
+
+  <!-- ═══ MAIN COLUMN ═══ -->
+  <main class="main">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="eyebrow">Free Video Tool</div>
+      <h1>Remove the <em>Gemini Logo</em><br>from your videos</h1>
+      <p class="hero-sub">Generated a video with Google Gemini or Veo? Strip the sparkle ✦ watermark from the bottom-right corner — privately, in your browser, in seconds.</p>
+    </div>
+
+    <!-- Tool card -->
+    <div class="card">
+      <div class="card-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <span style="margin-left:8px">GeminiClean · Video Processor</span>
+      </div>
+
+      <!-- Drop zone -->
+      <div class="dropzone" id="dz">
+        <div class="drop-icon">🎬</div>
+        <div class="drop-title">Drop your Gemini video here</div>
+        <div class="drop-sub">MP4 · MOV · WebM · Max 500 MB</div>
+        <button class="pick-btn" id="pick-btn">Choose Video</button>
+        <input type="file" id="file-input" accept="video/*">
+      </div>
+
+      <!-- Error -->
+      <div class="err" id="err"></div>
+
+      <!-- Preview -->
+      <div class="preview" id="preview">
+        <video class="thumb" id="vid" controls playsinline></video>
+        <div class="meta-row" id="meta"></div>
+        <button class="go-btn" id="go-btn">✦ Remove Gemini Logo</button>
+      </div>
+
+      <!-- Progress -->
+      <div class="prog" id="prog">
+        <div class="prog-badge"><div class="ping"></div> Processing video…</div>
+        <div class="prog-labels">
+          <span id="p-status">Starting…</span>
+          <span id="p-pct">0%</span>
+        </div>
+        <div class="bar-bg"><div class="bar-fill" id="bar"></div></div>
+        <div class="log" id="log"></div>
+      </div>
+
+      <!-- Result -->
+      <div class="result" id="result">
+        <div class="result-card">
+          <div class="result-icon">✅</div>
+          <div>
+            <h3>Logo removed!</h3>
+            <p>Your clean video is ready to download</p>
+          </div>
+        </div>
+        <a href="#" class="dl-btn" id="dl-btn" download="clean_video.mp4">⬇ Download Clean Video</a>
+        <button class="again-btn" id="again-btn">Process another video</button>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="how">
+      <div class="section-tag">// How it works</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-n">01 ─</div>
+          <h3>Upload</h3>
+          <p>Drop your Gemini-generated video. It stays in your browser — never uploaded to any server. 100% private.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">02 ─</div>
+          <h3>Process</h3>
+          <p>Our in-browser ffmpeg engine precisely targets and removes the Gemini sparkle from the bottom-right corner.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">03 ─</div>
+          <h3>Download</h3>
+          <p>Get your clean MP4 instantly. Same quality, zero watermark. Post on LinkedIn, Instagram, or anywhere.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ — SEO content -->
+    <div class="faq">
+      <div class="section-tag">// Frequently Asked Questions</div>
+
+      <div class="faq-item">
+        <div class="faq-q">How do I remove the Gemini logo from a video?</div>
+        <div class="faq-a">Upload your Gemini-generated video to GeminiClean, click "Remove Gemini Logo", and download the clean version. The entire process happens in your browser using ffmpeg — no data is sent anywhere.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does this work on Veo-generated videos?</div>
+        <div class="faq-a">Yes. GeminiClean works on videos generated by Google Gemini, Veo 2, and Veo 3. The Gemini sparkle logo (✦) appears in the bottom-right corner of all these videos and our tool removes it precisely.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is this free? Do I need to sign up?</div>
+        <div class="faq-a">Completely free, no signup required, no limits. GeminiClean runs entirely in your browser — we have zero server costs, so we can offer it for free forever.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is my video private?</div>
+        <div class="faq-a">Yes. Your video never leaves your device. We use WebAssembly (ffmpeg.wasm) which runs the video processing entirely inside your browser. Nothing is uploaded to any server.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What video formats are supported?</div>
+        <div class="faq-a">GeminiClean supports MP4, MOV, WebM, and most common video formats up to 500MB. Output is always a high-quality MP4.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="aside">
+
+    <!-- Ad 1 — Replace with AdSense -->
+    <!-- PASTE YOUR ADSENSE 300×250 CODE HERE -->
+    <div class="ad-block ad-rectangle">AdSense · 300×250</div>
+
+    <!-- Info card -->
+    <div class="aside-info">
+      <h3>Why GeminiClean?</h3>
+      <div class="check-item">100% private — stays in your browser</div>
+      <div class="check-item">No signup or account needed</div>
+      <div class="check-item">Free forever, no usage limits</div>
+      <div class="check-item">Works on Gemini & Veo 2 & 3</div>
+      <div class="check-item">High quality output preserved</div>
+      <div class="check-item">Works on any device with a browser</div>
+    </div>
+
+    <!-- Ad 2 — Replace with AdSense -->
+    <!-- PASTE YOUR ADSENSE 300×250 CODE HERE -->
+    <div class="ad-block ad-rectangle2">AdSense · 300×250</div>
+
+  </aside>
+</div>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="fc">
+    <h4>About</h4>
+    <p>GeminiClean is a free browser-based tool to remove the Gemini AI sparkle logo (✦) from videos generated using Google Gemini and Veo. No server, no signup, no cost.</p>
+  </div>
+  <div class="fc">
+    <h4>How It Works</h4>
+    <p>We use ffmpeg.wasm — a WebAssembly port of FFmpeg — running entirely in your browser. Your video is never sent anywhere. Your privacy is guaranteed by design.</p>
+  </div>
+  <div class="fc">
+    <h4>Related Searches</h4>
+    <p>remove gemini logo · gemini watermark remover · veo logo remove · gemini video clean · remove gemini sparkle · gemini logo video free · veo watermark</p>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2026 GeminiClean. Free to use forever.</span>
+  <span>Powered by ffmpeg.wasm · 100% Privacy-First</span>
+</div>
+
+<!-- ════ SCRIPTS ════ -->
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js"></script>
+<script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/index.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ── State
+  let ff = null, loaded = false, file = null, vw = 0, vh = 0, outURL = null;
+
+  // ── Elements
+  const $ = id => document.getElementById(id);
+  const dz      = $('dz');
+  const pickBtn = $('pick-btn');
+  const fi      = $('file-input');
+  const preview = $('preview');
+  const vid     = $('vid');
+  const metaRow = $('meta');
+  const goBtn   = $('go-btn');
+  const prog    = $('prog');
+  const pStatus = $('p-status');
+  const pPct    = $('p-pct');
+  const bar     = $('bar');
+  const log     = $('log');
+  const result  = $('result');
+  const dlBtn   = $('dl-btn');
+  const againBtn= $('again-btn');
+  const overlay = $('overlay');
+  const errEl   = $('err');
+
+  // ── Load ffmpeg (single-threaded — no SharedArrayBuffer needed)
+  async function loadFF() {
+    if (loaded) return true;
+    overlay.classList.add('on');
+    try {
+      const { FFmpeg } = FFmpegWASM;
+      const { toBlobURL } = FFmpegUtil;
+      ff = new FFmpeg();
+
+      ff.on('log', ({ message }) => addLog(message));
+      ff.on('progress', ({ progress }) => {
+        const p = Math.min(100, Math.round(progress * 100));
+        bar.style.width = p + '%';
+        pPct.textContent = p + '%';
+        if (p > 0) pStatus.textContent = 'Removing logo…';
+      });
+
+      const base = 'https://unpkg.com/@ffmpeg/core-st@0.12.4/dist/umd';
+      await ff.load({
+        coreURL: await toBlobURL(base + '/ffmpeg-core.js', 'text/javascript'),
+        wasmURL: await toBlobURL(base + '/ffmpeg-core.wasm', 'application/wasm'),
+      });
+      loaded = true;
+      return true;
+    } catch (e) {
+      showErr('Engine failed to load: ' + e.message);
+      return false;
+    } finally {
+      overlay.classList.remove('on');
+    }
+  }
+
+  // ── Helpers
+  function showErr(msg) {
+    errEl.textContent = msg;
+    errEl.classList.add('on');
+    setTimeout(() => errEl.classList.remove('on'), 7000);
+  }
+  function addLog(msg) {
+    log.textContent += msg + '\n';
+    log.scrollTop = log.scrollHeight;
+  }
+  function fmtSize(b) {
+    return b < 1048576 ? (b/1024).toFixed(1)+' KB' : (b/1048576).toFixed(1)+' MB';
+  }
+  function delogoPx(w, h) {
+    // Gemini sparkle ✦ sits at ~bottom-right 11% from right, 17% from bottom
+    return {
+      x: Math.round(w * 0.896),
+      y: Math.round(h * 0.830),
+      w: Math.round(w * 0.067),
+      h: Math.round(h * 0.115),
+    };
+  }
+
+  // ── File intake
+  function intake(f) {
+    if (!f || !f.type.startsWith('video/')) { showErr('Please upload a video file (MP4, MOV, WebM).'); return; }
+    if (f.size > 500 * 1024 * 1024) { showErr('File is too large — max 500 MB.'); return; }
+    file = f;
+    vid.src = URL.createObjectURL(f);
+    vid.onloadedmetadata = () => {
+      vw = vid.videoWidth; vh = vid.videoHeight;
+      metaRow.innerHTML =
+        `<span>File: <em>${f.name}</em></span>` +
+        `<span>Size: <em>${fmtSize(f.size)}</em></span>` +
+        `<span>Res: <em>${vw}×${vh}</em></span>`;
+    };
+    dz.style.display = 'none';
+    show(preview);
+    hide(prog); hide(result);
+  }
+
+  function show(el) { el.classList.add('on'); }
+  function hide(el) { el.classList.remove('on'); }
+
+  // ── Events — drop zone
+  pickBtn.addEventListener('click', () => fi.click());
+  dz.addEventListener('click', e => { if (e.target !== pickBtn) fi.click(); });
+  fi.addEventListener('change', e => { if (e.target.files[0]) intake(e.target.files[0]); });
+  dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('over'); });
+  dz.addEventListener('dragleave', () => dz.classList.remove('over'));
+  dz.addEventListener('drop', e => {
+    e.preventDefault(); dz.classList.remove('over');
+    if (e.dataTransfer.files[0]) intake(e.dataTransfer.files[0]);
+  });
+
+  // ── Process
+  goBtn.addEventListener('click', async () => {
+    if (!file) return;
+    if (!(await loadFF())) return;
+
+    hide(preview);
+    show(prog);
+    bar.style.width = '0%'; pPct.textContent = '0%';
+    pStatus.textContent = 'Reading file…'; log.textContent = '';
+
+    try {
+      const { fetchFile } = FFmpegUtil;
+      const ext = (file.name.split('.').pop() || 'mp4').toLowerCase();
+      const inp = `input.${ext}`;
+
+      addLog('Writing video to memory…');
+      await ff.writeFile(inp, await fetchFile(file));
+
+      const dp = delogoPx(vw || 1280, vh || 720);
+      addLog(`Resolution: ${vw}×${vh}`);
+      addLog(`Delogo region: x=${dp.x} y=${dp.y} w=${dp.w} h=${dp.h}`);
+      addLog('Running delogo filter…');
+      pStatus.textContent = 'Processing…';
+
+      await ff.exec([
+        '-i', inp,
+        '-vf', `delogo=x=${dp.x}:y=${dp.y}:w=${dp.w}:h=${dp.h}:show=0`,
+        '-c:v', 'libx264', '-crf', '18', '-preset', 'fast',
+        '-c:a', 'copy',
+        'output.mp4'
+      ]);
+
+      addLog('Reading output…');
+      const data = await ff.readFile('output.mp4');
+      if (outURL) URL.revokeObjectURL(outURL);
+      outURL = URL.createObjectURL(new Blob([data.buffer], { type: 'video/mp4' }));
+
+      dlBtn.href = outURL;
+      dlBtn.download = file.name.replace(/\.[^.]+$/, '') + '_clean.mp4';
+
+      bar.style.width = '100%'; pPct.textContent = '100%';
+      pStatus.textContent = 'Done!';
+      addLog('✓ Logo removed successfully.');
+
+      setTimeout(() => { hide(prog); show(result); }, 600);
+
+      await ff.deleteFile(inp).catch(() => {});
+      await ff.deleteFile('output.mp4').catch(() => {});
+
+    } catch (e) {
+      hide(prog); show(preview);
+      showErr('Processing error: ' + e.message);
+      console.error(e);
+    }
+  });
+
+  // ── Reset
+  againBtn.addEventListener('click', () => {
+    file = null; vw = 0; vh = 0;
+    vid.src = ''; fi.value = '';
+    hide(result); hide(prog); hide(preview);
+    dz.style.display = '';
+    if (outURL) { URL.revokeObjectURL(outURL); outURL = null; }
+  });
+
+  // ── Preload engine silently after page load
+  window.addEventListener('load', () => setTimeout(loadFF, 1200));
+
+})();
+</script>
+
+</body>
+</html>
